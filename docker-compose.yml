@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  prompt-router:
+    build: .
+    env_file: .env
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
